@@ -1,38 +1,104 @@
 .App {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sentence-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100px;
+  align-items: flex-end; /* 调整为靠右对齐 */
+  justify-content: flex-start;
+  flex-wrap: wrap; /* 允许自动换行 */
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative; /* 添加相对定位 */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative; /* 添加相对定位 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.word-icon {
+  width: 100px; /* 调整图标宽度 */
+  height: 100px; /* 调整图标高度 */
+}
+
+.word-label {
+  text-align: center;
+  margin-top: 5px; /* 调整文本与图标的间距 */
+  position: absolute;
+  bottom: -20px; /* 调整文本位置 */
+  left: 50%; /* 居中对齐 */
+  transform: translateX(-50%); /* 居中对齐 */
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* 靠右对齐 */
+  position: absolute;
+  top: 0; /* 定位到顶部 */
+  right: 0; /* 定位到最右侧 */
+  margin-right: 20px; /* 右侧间距 */
+  z-index: 1; /* 提升层级确保在最上层 */
+}
+
+
+.icon {
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.picture-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.picture-cards > div {
+  margin: 10px;
+  padding: 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.picture-cards > div:hover {
+  background: #e0e0e0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .picture-cards {
+    grid-template-columns: repeat(4, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 800px) {
+  .picture-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .picture-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
