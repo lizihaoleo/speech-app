@@ -8,12 +8,17 @@ import './App.css';
 const App = () => {
   const [sentence, setSentence] = useState([]);
   const [speaking, setSpeaking] = useState(false);
+  
   // Memoize the utterance creation using useMemo
   const utterance = useMemo(() => {
     const newUtterance = new SpeechSynthesisUtterance(sentence.map(item => item.label).join(' '));
     newUtterance.lang = 'zh-CN';
     return newUtterance;
   }, [sentence]);
+
+  useEffect(() => {
+    document.title = '宝贝说说APP';
+  }, []);
 
   useEffect(() => {
     const handleEndSpeech = () => {
