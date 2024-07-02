@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Syntax from './Syntax';
 import FeelingItems from './itemsList/FeelingItems';
 import PeopleItems from './itemsList/PeopleItems';
+import FoodItems from './itemsList/FoodItems';
+import PlaceItems from './itemsList/PlaceItems';
 import PictureCardMatrix from './PictureCardMatrix';
 import DialogueBox from './DialogueBox';
 import AboutDialog from './AboutDialog';
@@ -28,6 +30,12 @@ const App = () => {
       case "人物":
         setDisplayItems(PeopleItems);
         break;
+      case "食物":
+        setDisplayItems(FoodItems);
+        break;
+      case "地点":
+          setDisplayItems(PlaceItems);
+          break;
       default:
         break;
     }

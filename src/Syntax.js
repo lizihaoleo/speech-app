@@ -59,6 +59,8 @@ const Syntax = [
   // folder images
   { "label": "感觉", "icon": require('./icons/Feelings/感觉.png'), "isFolder": true },
   { "label": "人物", "icon": require('./icons/People/人物.png'), "isFolder": true },
+  { "label": "食物", "icon": require('./icons/Food/食物.png'), "isFolder": true },
+  { "label": "地点", "icon": require('./icons/Places/地点.png'), "isFolder": true },
 
 ];
 
