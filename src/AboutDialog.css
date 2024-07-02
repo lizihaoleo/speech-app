@@ -1,0 +1,29 @@
+.about-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .about-content {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: fixed ;
+    top: 10px;
+    right: 10px; /* 调整右边距 */
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
