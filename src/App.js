@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Syntax from './Syntax';
 import FeelingItems from './itemsList/FeelingItems';
-import PictureCard from './PictureCard';
-import './App.css';
 import PeopleItems from './itemsList/PeopleItems';
+import PictureCardMatrix from './PictureCardMatrix';
 import DialogueBox from './DialogueBox';
+import './App.css';
 
 const App = () => {
   const [sentence, setSentence] = useState([]);
@@ -55,11 +55,10 @@ const App = () => {
         clearSentence={clearSentence} 
         deleteLastWord={deleteLastWord} 
       />
-      <div className="picture-cards">
-        {displayItems.map((icon, index) => (
-          <PictureCard key={index} icon={icon.icon} label={icon.label} onClick={() => addWord(icon)} />
-        ))}
-      </div>
+      <PictureCardMatrix 
+        items={displayItems} 
+        onCardClick={addWord} 
+      />
     </div>
   );
 };
