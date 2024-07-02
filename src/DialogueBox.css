@@ -1,0 +1,56 @@
+.sentence-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    align-items: flex-end; /* 调整为靠右对齐 */
+    justify-content: flex-start;
+    flex-wrap: wrap; /* 允许自动换行 */
+    margin-bottom: 20px;
+    margin-right: 0px;
+    position: relative; /* 添加相对定位 */
+  }
+  
+  .word {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; /* 添加相对定位 */
+  }
+  
+  .word-icon {
+    width: 100px; /* 调整图标宽度 */
+    height: 100px; /* 调整图标高度 */
+  }
+  
+  .word-label {
+    text-align: center;
+    margin-top: 5px; /* 调整文本与图标的间距 */
+    position: absolute;
+    bottom: -20px; /* 调整文本位置 */
+    left: 50%; /* 居中对齐 */
+    transform: translateX(-50%); /* 居中对齐 */
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* 靠右对齐 */
+    position: absolute;
+    top: 0; /* 定位到顶部 */
+    right: 0; /* 定位到最右侧 */
+    margin-right: 20px; /* 右侧间距 */
+    z-index: 1; /* 提升层级确保在最上层 */
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 2em;
+  }
+  

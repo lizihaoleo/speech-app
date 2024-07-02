@@ -8,7 +8,7 @@ const PictureCardMatrix = ({ items, onCardClick }) => {
     <Container>
       <Grid container spacing={2}>
         {items.map((item, index) => (
-          <Grid item xs={6} sm={4} md={3} lg={2} xl={1} key={index}>
+          <Grid item xs={3} sm={2} md={1} lg={1} xl={1} key={index}>
             <PictureCard 
               icon={item.icon}
               label={item.label}

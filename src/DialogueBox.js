@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faTrash, faEarListen, faPause } from '@fortawesome/free-solid-svg-icons';
+import "./DialogueBox.css";
 
 const DialogueBox = ({ sentence, setSentence, clearSentence, deleteLastWord }) => {
   const [speaking, setSpeaking] = useState(false);
