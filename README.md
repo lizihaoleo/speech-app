@@ -35,7 +35,7 @@ cd speech-app
 docker build -t {yourusername}/speech-app:latest .
 docker run -dp 3000:3000 {yourusername}/speech-app:latest
 ```
-完成安装后将可以通过地址http://localhost:3000访问该项目内容。
+完成安装后将可以通过地址http://localhost:3000 访问该项目内容。
 
 ## 许可证 / License
 MIT License

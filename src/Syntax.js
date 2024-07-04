@@ -9,6 +9,8 @@ const Syntax = [
   { "label": "这", "icon": require('./icons/Orange/THIS.png'), "isFolder": false },
   { "label": "那", "icon": require('./icons/Orange/THAT.png'), "isFolder": false },
   { "label": "大便", "icon": require('./icons/Orange/POOP.png'), "isFolder": false },
+  { "label": "不客气", "icon": require('./icons/Orange/不客气.png'), "isFolder": false },
+  { "label": "谢谢", "icon": require('./icons/Orange/谢谢.png'), "isFolder": false },
   
   { "label": "什么", "icon": require('./icons/White/WHAT.png'), "isFolder": false },
   { "label": "哪里", "icon": require('./icons/White/WHERE.png'), "isFolder": false },
@@ -50,18 +52,16 @@ const Syntax = [
   { "label": "好的", "icon": require('./icons/Blue/GOOD.png'), "isFolder": false },
   { "label": "坏的", "icon": require('./icons/Blue/BAD.png'), "isFolder": false },
   { "label": "不", "icon": require('./icons/Blue/NOT.png'), "isFolder": false },
-  { "label": "不同", "icon": require('./icons/Blue/DIFFERENT.png'), "isFolder": false },
-  { "label": "完成", "icon": require('./icons/Blue/FINISHED.png'), "isFolder": false },
-  { "label": "更多", "icon": require('./icons/Blue/MORE.png'), "isFolder": false },
-  { "label": "全部", "icon": require('./icons/Blue/ALL.png'), "isFolder": false },
   { "label": "现在", "icon": require('./icons/Blue/NOW.png'), "isFolder": false },
-  { "label": "一些", "icon": require('./icons/Blue/SOME.png'), "isFolder": false },
+
   // folder images
   { "label": "感觉", "icon": require('./icons/Feelings/感觉.png'), "isFolder": true },
   { "label": "人物", "icon": require('./icons/People/人物.png'), "isFolder": true },
   { "label": "食物", "icon": require('./icons/Food/食物.png'), "isFolder": true },
   { "label": "地点", "icon": require('./icons/Places/地点.png'), "isFolder": true },
-
+  { "label": "动作", "icon": require('./icons/Actions/动作.png'), "isFolder": true },
+  { "label": "描述", "icon": require('./icons/Describe/描述.png'), "isFolder": true },
+  { "label": "对话", "icon": require('./icons/Chat/对话.png'), "isFolder": true },
 ];
 
 export default Syntax;

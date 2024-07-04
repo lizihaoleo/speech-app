@@ -8,6 +8,9 @@ import PictureCardMatrix from './PictureCardMatrix';
 import DialogueBox from './DialogueBox';
 import AboutDialog from './AboutDialog';
 import './App.css';
+import ActionItems from './itemsList/ActionItems';
+import DescribeItems from './itemsList/DescribeItems';
+import ChatItems from './itemsList/ChatItems';
 
 const App = () => {
   const [sentence, setSentence] = useState([]);
@@ -36,6 +39,15 @@ const App = () => {
       case "地点":
           setDisplayItems(PlaceItems);
           break;
+      case "动作":
+          setDisplayItems(ActionItems);
+          break;
+      case "描述":
+        setDisplayItems(DescribeItems);
+        break;
+      case "对话":
+        setDisplayItems(ChatItems);
+        break;
       default:
         break;
     }
